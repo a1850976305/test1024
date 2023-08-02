@@ -3,7 +3,7 @@
 "lives":[    
 {
       "name": "live",
-      "url": "https://agit.ai/guot54/ygbh/raw/branch/master/zB/pro.txt",
+      "url": "https://raw.githubusercontent.com/a1850976305/test1024/main/YueGuangPro.txt",
       "type": 0,
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png",
