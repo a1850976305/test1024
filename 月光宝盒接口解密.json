@@ -46,6 +46,16 @@
             "api" : "https://agit.ai/guot54/TVBOXZY/raw/branch/main/JS/lib/drpy.min.js",
             "ext" : "https://jihulab.com/ygbh1/box/-/raw/main/JS/js/DJ%E9%9F%B3%E4%B9%90.js"
         },
+	{
+           "key": "csp_appys_影探",
+           "name": "┃影探┃4K",
+           "type": 3,
+           "api": "csp_AppYsV2",
+           "searchable": 1,
+           "quickSearch": 1,
+           "filterable": 1,
+           "ext": "http://zvvvvvwvvvvvwvvwvvvwvwvwwvwwvvvvvwvwwwwvvvvwvwvvwvvwwvwvvwvvvwv.lfytyl.com/api.php/app/"
+        },
 
 {"key":"1","name":"🔞🈲未成年人禁止访问，请止步！！","type":0,"api":""},
 {"key":"17","name":"🔞🈲分割线——————","type":0,"api":""},
@@ -783,7 +793,17 @@
       "filterable": 0
     }   
 ],
-
+"rules":[
+	{
+   "name": "磁力廣告",
+   "hosts": [
+    "magnet"
+   ],
+   "regex": [
+    "更多","社 區","社 区","有趣","有 趣","英皇体育","全中文AV在线","澳门皇冠赌场","哥哥快来","美女荷官","裸聊","新片首发","UUE29"
+   ]
+  }
+],
 
 "parses":[
  {
