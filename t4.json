@@ -110,6 +110,76 @@
     }
   },
   {
+    "id": "BLSP",
+    "name": "BLSP(T4)",
+    "api": "https://learnpython.ggff.net/BLSP",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
+  {
+    "id": "HSTV",
+    "name": "HSTV(T4)",
+    "api": "https://learnpython.ggff.net/HSTV",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
+  {
+    "id": "PT",
+    "name": "PT(T4)",
+    "api": "https://learnpython.ggff.net/PT",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
+    {
+    "id": "Pornhub",
+    "name": "Pornhub(T4)",
+    "api": "https://learnpython.ggff.net/Pornhub",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
+    {
+    "id": "XJ",
+    "name": "XJ(T4)",
+    "api": "https://learnpython.ggff.net/XJ",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
+    {
+    "id": "a1",
+    "name": "a1(T4)",
+    "api": "https://learnpython.ggff.net/a1",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
+   {
+    "id": "a1",
+    "name": "a1(T4)",
+    "api": "https://learnpython.ggff.net/a1",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
+  {
     "id": "py_missav",
     "name": "py_missav(T4)",
     "api": "https://learnpython.ggff.net/py_missav",
@@ -139,4 +209,5 @@
       "template": "t4"
     }
   }
+
 ]
