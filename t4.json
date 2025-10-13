@@ -102,7 +102,7 @@
   {
     "id": "Javxbb",
     "name": "Javxbb(T4)",
-    "api": "https://learnpython.ggff.net/Javxbb",
+    "api": "https://learnpython.ggff.net/javxbb",
     "nsfw": true,
     "type": 1,
     "extra": {
@@ -221,4 +221,5 @@
   }
 
 ]
+
 
