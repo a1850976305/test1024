@@ -100,6 +100,16 @@
     }
   },
   {
+    "id": "Javxbb",
+    "name": "Javxbb(T4)",
+    "api": "https://learnpython.ggff.net/Javxbb",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
+  {
     "id": "Lav",
     "name": "Lav(T4)",
     "api": "https://learnpython.ggff.net/lav",
@@ -211,3 +221,4 @@
   }
 
 ]
+
