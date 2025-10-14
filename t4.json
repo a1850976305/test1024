@@ -1,15 +1,5 @@
 [
   {
-    "id": "CZZY",
-    "name": "CZZY(T4)",
-    "api": "https://learnpython.ggff.net/CZZY",
-    "nsfw":false,
-    "type": 1,
-    "extra": {
-      "template": "t4"
-    }
-  },
-  {
     "id": "51XG",
     "name": "51XG(T4)",
     "api": "https://learnpython.ggff.net/51XG",
@@ -231,6 +221,7 @@
   }
 
 ]
+
 
 
 
