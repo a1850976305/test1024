@@ -1,9 +1,9 @@
 [
   {
-    "id": "18",
-    "name": "18(T4)",
-    "api": "https://learnpython.ggff.net/18",
-    "nsfw":true,
+    "id": "CZZY",
+    "name": "CZZY(T4)",
+    "api": "https://learnpython.ggff.net/CZZY",
+    "nsfw":false,
     "type": 1,
     "extra": {
       "template": "t4"
@@ -231,6 +231,7 @@
   }
 
 ]
+
 
 
 
