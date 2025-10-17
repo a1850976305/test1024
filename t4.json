@@ -109,6 +109,26 @@
       "template": "t4"
     }
   },
+    {
+    "id": "LavAPP",
+    "name": "LavAPP(T4)",
+    "api": "https://learnpython.ggff.net/lavAPP",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
+    {
+    "id": "911",
+    "name": "911(T4)",
+    "api": "https://learnpython.ggff.net/911",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+      "template": "t4"
+    }
+  },
   {
     "id": "BLSP",
     "name": "BLSP(T4)",
@@ -221,6 +241,7 @@
   }
 
 ]
+
 
 
 
