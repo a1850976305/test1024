@@ -179,16 +179,6 @@
       "template": "t4"
     }
   },
-    {
-    "id": "a1",
-    "name": "a1(T4)",
-    "api": "https://learnpython.ggff.net/a1",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-      "template": "t4"
-    }
-  },
    {
     "id": "a1",
     "name": "a1(T4)",
@@ -240,39 +230,9 @@
     }
   },
   {
-    "id": "py_BLSP",
-    "name": "py_BLSP(T4)",
-    "api": "https://learnpython.ggff.net/BLSP",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
     "id": "py_FMPY",
     "name": "py_FMPY(T4)",
     "api": "https://learnpython.ggff.net/FMPY",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_BLSP",
-    "name": "py_BLSP(T4)",
-    "api": "https://learnpython.ggff.net/BLSP",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_PT",
-    "name": "py_PT(T4)",
-    "api": "https://learnpython.ggff.net/PT",
     "nsfw": true,
     "type": 1,
     "extra": {
@@ -321,6 +281,7 @@
   }
 
 ]
+
 
 
 
