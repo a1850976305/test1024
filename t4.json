@@ -230,6 +230,16 @@
     }
   },
   {
+    "id": "py_ThePorn1",
+    "name": "py_ThePorn1(T4)",
+    "api": "https://learnpython.ggff.net/ThePorn1.php",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
     "id": "epo",
     "name": "epo(T4)",
     "api": "https://learnpython.ggff.net/epo",
@@ -241,6 +251,7 @@
   }
 
 ]
+
 
 
 
