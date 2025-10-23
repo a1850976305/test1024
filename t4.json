@@ -270,6 +270,16 @@
     }
   },
   {
+    "id": "py_一个区",
+    "name": "py_一个区(T4)",
+    "api": "https://dao.mhql.qzz.io/py/一个区.py",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
     "id": "epo",
     "name": "epo(T4)",
     "api": "https://learnpython.ggff.net/epo",
@@ -281,6 +291,7 @@
   }
 
 ]
+
 
 
 
