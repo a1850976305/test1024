@@ -220,9 +220,9 @@
     }
   },
   {
-    "id": "py_ThePorn1",
-    "name": "py_ThePorn1(T4)",
-    "api": "https://learnpython.ggff.net/ThePorn1",
+    "id": "py_ThePorn",
+    "name": "py_ThePorn(T4)",
+    "api": "https://learnpython.ggff.net/ThePorn",
     "nsfw": true,
     "type": 1,
     "extra": {
@@ -280,16 +280,6 @@
     }
   },
   {
-    "id": "py_tudou",
-    "name": "py_tudou(T4)",
-    "api": "https://learnpython.ggff.net/py_tudou",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
     "id": "py_rsp",
     "name": "py_rsp(T4)",
     "api": "https://learnpython.ggff.net/rsp",
@@ -321,6 +311,7 @@
   }
 
 ]
+
 
 
 
