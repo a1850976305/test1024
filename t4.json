@@ -53,7 +53,7 @@
   {
   "id": "jable",
   "name": "Jable",
-  "api": "https://jable.tv",
+  "api": "https://jable.tv/",
   "nsfw": true,
   "type": 1,
   "extra": {
@@ -380,6 +380,7 @@
   }
 
 ]
+
 
 
 
