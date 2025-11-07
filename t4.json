@@ -51,6 +51,24 @@
   }
 },
   {
+  "id": "jable",
+  "name": "Jable",
+  "api": "https://jable.tv",
+  "nsfw": true,
+  "type": 1,
+  "extra": {
+    "gfw": false,
+    "searchLimit": 12,
+    "js": {
+      "category": "async function getTabs(){let list=[];let ignore=['首页'];function isIgnoreClassName(className){return ignore.some((element)=>className.includes(element))}let classurl=`${env.baseUrl}/categories/?mode=async&function=get_block&block_id=list_categories_video_categories_list&sort_by=avg_videos_popularity`;const html=await req(classurl,{headers:{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\"}});if(html.includes('Just a moment...')){return[]}const $=kitty.load(html);let allClass=$('.container .col-6.col-sm-4.col-lg-3');allClass.each((_,e)=>{const name=$(e).find('h4').text();const href=$(e).find('a').attr('href');const isIgnore=isIgnoreClassName(name);if(isIgnore)return;list.push({text:name,id:href})});return list}return await getTabs()",
+      "home": "const cate=env.get(\"category\");const page=env.get(\"page\");const url=cate+`?mode=async&function=get_block&block_id=list_videos_common_videos_list&sort_by=post_date&from=${page}&_=${Date.now()}`;const html=await req(url,{headers:{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\",\"Cookie\":\"language=cn_CN\"}});if(html.includes('Just a moment...')){return[]}const $=kitty.load(html);const movies=[];$('#list_videos_common_videos_list .container .row > div').each((_,element)=>{const href=$(element).find('.title a').attr('href');const title=$(element).find('.title a').text();const cover=$(element).find('.img-box img').attr('data-src');const duration=$(element).find('.label').text();movies.push({id:href??\"\",cover:cover??\"\",title:title,remark:duration})});return movies",
+      "detail": "const movieId=env.get(\"movieId\");const url=movieId;const html=await req(url,{headers:{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\"}});if(html.includes('Just a moment...')){return{playlist:[]}}const $=kitty.load(html);let script=$('#site-content .container .col').eq(0).find('section').eq(0).find('script:last').text();let playUrlMatch=script.match(/var hlsUrl = '(.*)';/);if(!playUrlMatch){return{playlist:[]}}let playUrl=playUrlMatch[1];return{playlist:[{title:\"默认分组\",videos:[{text:\"播放\",url:playUrl}]}]}",
+      "search": "const keyword=env.get(\"keyword\");const page=env.get(\"page\");const encodedKeyword=encodeURIComponent(keyword);const url=`${env.baseUrl}/search/${encodedKeyword}/?mode=async&function=get_block&block_id=list_videos_videos_list_search_result&q=${encodedKeyword}&sort_by=&from=${page}&_=${Date.now()}`;const html=await req(url,{headers:{\"User-Agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\"}});const $=kitty.load(html);const movies=[];$('#list_videos_videos_list_search_result .container .row > div').each((_,element)=>{const href=$(element).find('.title a').attr('href');const title=$(element).find('.title a').text();const cover=$(element).find('.img-box img').attr('data-src');const duration=$(element).find('.label').text();movies.push({id:href??\"\",cover:cover??\"\",title:title,remark:duration})});return movies",
+      "parseIframe": "return kitty.utils.getM3u8WithIframe(env)"
+    }
+  }
+},
+  {
     "id": "51XG",
     "name": "51XG(T4)",
     "api": "https://learnpython.ggff.net/51XG",
@@ -362,6 +380,7 @@
   }
 
 ]
+
 
 
 
