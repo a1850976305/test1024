@@ -137,7 +137,7 @@
   },
   {
     "id": "黑料不打样",
-    "name": "epo(T4)",
+    "name": "HLBTY(T4)",
     "api": "https://learnpython.ggff.net/HLBTY",
     "nsfw": true,
     "type": 1,
@@ -236,6 +236,7 @@
     }
   }
 ]
+
 
 
 
