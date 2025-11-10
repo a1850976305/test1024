@@ -186,9 +186,19 @@
     }
   },
   {
-    "id": "drpyS_独播库",
-    "name": "独播库(DS)",
+    "id": "py_独播库",
+    "name": "独播库(T4)",
     "api": "https://tvbot.ggff.net/duboku",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_月佬瓜子影视",
+    "name": "月佬瓜子影视(T4)",
+    "api": "https://tvbot.ggff.net/guazi",
     "nsfw": false,
     "type": 1,
     "extra": {
@@ -246,6 +256,7 @@
     }
   }
 ]
+
 
 
 
