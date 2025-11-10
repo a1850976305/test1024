@@ -376,6 +376,26 @@
     }
   },
   {
+    "id": "drpyS_可可影视",
+    "name": "可可影视(DS)",
+    "api": "https://ds.wmtv.qzz.io/api/可可影视?pwd=dzyyds",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "drpyS_荐片",
+    "name": "荐片(DS)",
+    "api": "https://ds.wmtv.qzz.io/api/荐片?pwd=dzyyds",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
     "id": "drpyS_贝乐虎[儿]",
     "name": "贝乐虎[儿](DS)",
     "api": "https://ds.wmtv.qzz.io/api/贝乐虎[儿]?pwd=dzyyds",
@@ -397,6 +417,7 @@
   }
 
 ]
+
 
 
 
