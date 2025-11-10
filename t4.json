@@ -199,7 +199,7 @@
     "id": "py_DianYingTanTang",
     "name": "电影天堂(T4)",
     "api": "https://py.doube.eu.org/spider?site=DianYingTanTang",
-    "nsfw": false
+    "nsfw": false,
     "type": 1,
     "extra": {
     "template": "t4"
@@ -209,7 +209,7 @@
     "id": "py_Dm84",
     "name": "动漫巴士(T4)",
     "api": "https://py.doube.eu.org/spider?site=Dm84",
-    "nsfw": false
+    "nsfw": false,
     "type": 1,
     "extra": {
     "template": "t4"
@@ -219,7 +219,7 @@
     "id": "py_OleVod",
     "name": "欧乐影院(T4)",
     "api": "https://py.doube.eu.org/spider?site=OleVod",
-    "nsfw": false
+    "nsfw": false,
     "type": 1,
     "extra": {
     "template": "t4"
@@ -316,6 +316,7 @@
     }
   }
 ]
+
 
 
 
