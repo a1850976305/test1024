@@ -362,21 +362,22 @@
     "nsfw": true,
     "type": 1,
     "extra": {
-      "template": "t4"
+    "template": "t4"
     }
   },
   {
-    "id": "drpyS_大象影视",
-    "name": "大象影视(DS)",
-    "api": "https://ds.wmtv.qzz.io/api/大象影视?pwd=dzyyds",
+    "id": "drpyS_爱看机器人",
+    "name": "爱看机器人(DS)",
+    "api": "https://ds.wmtv.qzz.io/api/爱看机器人?pwd=dzyyds",
     "nsfw": false,
     "type": 1,
     "extra": {
-      "template": "t4"
+    "template": "t4"
     }
   }
 
 ]
+
 
 
 
