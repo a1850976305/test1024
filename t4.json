@@ -166,6 +166,26 @@
     }
   },
   {
+    "id": "py_PhP在线",
+    "name": "PhP在线(T4)",
+    "api": "https://zhangqun1818.serv00.net/php.php",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_Py合集",
+    "name": "Py合集(T4)",
+    "api": "https://zhangqun1818.serv00.net/py.php",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
     "id": "drpyS_番茄短剧",
     "name": "番茄短剧(DS)",
     "api": "https://ds.wmtv.qzz.io/api/番茄短剧?pwd=dzyyds",
@@ -216,6 +236,7 @@
     }
   }
 ]
+
 
 
 
