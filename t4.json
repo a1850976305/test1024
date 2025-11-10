@@ -8,6 +8,12 @@
   "extra": {
     "gfw": false,
     "searchLimit": 12,
+    "sniffer": {
+      "enabled": true,
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1"
+      }
+    },
     "js": {
       "category": [
         {
@@ -45,8 +51,7 @@
       ],
       "home": "const cate=env.get(\"category\");const page=env.get(\"page\");const url=`${env.baseUrl}/index.php/vod/type/id/${cate}/page/${page}.html`;try{const html=await req(url,{headers:{\"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X)AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1\"}});const $=kitty.load(html);const movies=[];$('.post-list .col-md-3').each((_,element)=>{const videoItem=$(element).find('.video-item');const entryTitle=$(element).find('.entry-title');const vodUrl=entryTitle.find('a').attr('href');const vodPic=videoItem.find('.featured-content-image a img').attr('data-original');const vodName=entryTitle.find('a').text().trim();const remark=videoItem.find('span.model-view-left').text().trim();const duration=videoItem.find('span.model-view').text().trim();const fullText=entryTitle.text().trim();const pubdate=fullText.replace(vodName,'').trim();if(vodUrl&&vodName){movies.push({id:vodUrl,cover:vodPic?vodPic:\"\",title:vodName,remark:remark})}});return movies}catch(e){return[]}",
       "detail": "const movieId=env.get(\"movieId\");const url=`${env.baseUrl}${movieId}`;return{playlist:[{title:\"默认线路\",videos:[{text:\"播放\",id:url}]}]}",
-      "search": "const keyword=env.get(\"keyword\");const page=env.get(\"page\");const encodedKeyword=encodeURIComponent(keyword);const url=`${env.baseUrl}/index.php/vod/search/page/${page}/wd/${encodedKeyword}.html`;try{const html=await req(url,{headers:{\"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X)AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1\"}});const $=kitty.load(html);const movies=[];$('.post-list .col-md-3').each((_,element)=>{const videoItem=$(element).find('.video-item');const entryTitle=$(element).find('.entry-title');const vodUrl=entryTitle.find('a').attr('href');const vodPic=videoItem.find('.featured-content-image a img').attr('data-original');const vodName=entryTitle.find('a').text().trim();const remark=videoItem.find('span.model-view-left').text().trim();const duration=videoItem.find('span.model-view').text().trim();const fullText=entryTitle.text().trim();const pubdate=fullText.replace(vodName,'').trim();if(vodUrl&&vodName){movies.push({id:vodUrl,cover:vodPic?vodPic:\"\",title:vodName,remark:remark})}});return movies}catch(e){return[]}",
-      "parseIframe": "return kitty.utils.getM3u8WithIframe(env)"
+      "search": "const keyword=env.get(\"keyword\");const page=env.get(\"page\");const encodedKeyword=encodeURIComponent(keyword);const url=`${env.baseUrl}/index.php/vod/search/page/${page}/wd/${encodedKeyword}.html`;try{const html=await req(url,{headers:{\"User-Agent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X)AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1\"}});const $=kitty.load(html);const movies=[];$('.post-list .col-md-3').each((_,element)=>{const videoItem=$(element).find('.video-item');const entryTitle=$(element).find('.entry-title');const vodUrl=entryTitle.find('a').attr('href');const vodPic=videoItem.find('.featured-content-image a img').attr('data-original');const vodName=entryTitle.find('a').text().trim();const remark=videoItem.find('span.model-view-left').text().trim();const duration=videoItem.find('span.model-view').text().trim();const fullText=entryTitle.text().trim();const pubdate=fullText.replace(vodName,'').trim();if(vodUrl&&vodName){movies.push({id:vodUrl,cover:vodPic?vodPic:\"\",title:vodName,remark:remark})}});return movies}catch(e){return[]}"
     }
   }
 },
@@ -362,6 +367,7 @@
   }
 
 ]
+
 
 
 
