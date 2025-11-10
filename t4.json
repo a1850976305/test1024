@@ -136,16 +136,6 @@
     }
   },
   {
-    "id": "黑料不打样",
-    "name": "HLBTY(T4)",
-    "api": "https://learnpython.ggff.net/HLBTY",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
     "id": "py_Miss",
     "name": "MissAV(T4)",
     "api": "https://py.doube.eu.org/spider?site=Miss",
@@ -236,6 +226,7 @@
     }
   }
 ]
+
 
 
 
