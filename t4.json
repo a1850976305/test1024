@@ -226,46 +226,6 @@
     }
   },
   {
-    "id": "py_独播库",
-    "name": "独播库(T4)",
-    "api": "https://tvbot.ggff.net/duboku",
-    "nsfw": false,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_月佬瓜子影视",
-    "name": "月佬瓜子影视(T4)",
-    "api": "https://tvbot.ggff.net/guazi",
-    "nsfw": false,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_爱瓜TV",
-    "name": "爱瓜TV(T4)",
-    "api": "https:/zhangqun66.com/aigua.php",
-    "nsfw": false,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_哔哩",
-    "name": "哔哩(T4)",
-    "api": "https:/zhangqun66.com/bilibili.php",
-    "nsfw": false,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
     "id": "drpyS_番茄短剧",
     "name": "番茄短剧(DS)",
     "api": "https://ds.wmtv.qzz.io/api/番茄短剧?pwd=dzyyds",
@@ -316,6 +276,7 @@
     }
   }
 ]
+
 
 
 
