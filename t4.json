@@ -176,26 +176,6 @@
     }
   },
   {
-    "id": "py_cjjh",
-    "name": "采集(T4)",
-    "api": "https://zhangqun1818.serv00.net/cj/cjjh.php",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_Py合集",
-    "name": "Py合集(T4)",
-    "api": "https://zhangqun1818.serv00.net/py.php",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
     "id": "py_DianYingTanTang",
     "name": "电影天堂(T4)",
     "api": "https://py.doube.eu.org/spider?site=DianYingTanTang",
@@ -276,6 +256,7 @@
     }
   }
 ]
+
 
 
 
