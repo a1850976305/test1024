@@ -176,6 +176,36 @@
     }
   },
   {
+    "id": "Vod_X细胞资源",
+    "name": "X细胞资源(采集)",
+    "api": "https://xxibaozyw.com/api.php/provide/vod",
+    "nsfw": true,
+    "type": 0,
+    "extra": {
+    "gfw": false
+    }
+  },
+  {
+    "id": "Vod_91视频",
+    "name": "91视频(采集)",
+    "api": "https://91av.cyou/api.php/provide/vod/",
+    "nsfw": true,
+    "type": 0,
+    "extra": {
+    "gfw": true
+    }
+  },
+  {
+    "id": "Vod_Hsck",
+    "name": "Hsck(采集)",
+    "api": "https://hsckzy.vip/api.php/provide/vod/",
+    "nsfw": true,
+    "type": 0,
+    "extra": {
+    "gfw": true
+    }
+  },
+  {
     "id": "py_DianYingTanTang",
     "name": "电影天堂(T4)",
     "api": "https://py.doube.eu.org/spider?site=DianYingTanTang",
@@ -256,6 +286,7 @@
     }
   }
 ]
+
 
 
 
