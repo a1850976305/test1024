@@ -177,7 +177,7 @@
   },
   {
     "id": "py_139fm多分类",
-    "name": "py_139fm多分类(T4)",
+    "name": "py_139fm多分类-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=139fm多分类",
     "nsfw": true,
     "type": 1,
@@ -187,7 +187,7 @@
   },
   {
     "id": "py_18",
-    "name": "py_18(T4)",
+    "name": "py_18-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=18",
     "nsfw": true,
     "type": 1,
@@ -197,19 +197,9 @@
   },
   {
     "id": "py_91网爆黑料",
-    "name": "py_91网爆黑料(T4)",
+    "name": "py_91网爆黑料-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=91网爆黑料",
     "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_cctv",
-    "name": "py_cctv(T4)",
-    "api": "http://zhangqun1818.serv00.net:5052/?sp=cctv",
-    "nsfw": false,
     "type": 1,
     "extra": {
     "template": "t4"
@@ -227,7 +217,7 @@
   },
   {
     "id": "py_stripchat",
-    "name": "py_stripchat(T4)",
+    "name": "py_stripchat-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=stripchat",
     "nsfw": true,
     "type": 1,
@@ -257,7 +247,7 @@
   },
   {
     "id": "py_七区",
-    "name": "py_七区(T4)",
+    "name": "py_七区-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=七区",
     "nsfw": true,
     "type": 1,
@@ -277,7 +267,7 @@
   },
   {
     "id": "py_四虎视频",
-    "name": "py_四虎视频(T4)",
+    "name": "py_四虎视频-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=四虎视频",
     "nsfw": true,
     "type": 1,
@@ -287,7 +277,7 @@
   },
   {
     "id": "py_推特",
-    "name": "py_推特(T4)",
+    "name": "py_推特-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=推特",
     "nsfw": true,
     "type": 1,
@@ -307,7 +297,7 @@
   },
   {
     "id": "py_花都影院",
-    "name": "py_花都影院(T4)",
+    "name": "py_花都影院-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=花都影院",
     "nsfw": true,
     "type": 1,
@@ -318,7 +308,7 @@
 
   {
     "id": "py_葡萄5区",
-    "name": "py_葡萄5区(T4)",
+    "name": "py_葡萄5区-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=葡萄5区",
     "nsfw": true,
     "type": 1,
@@ -328,7 +318,7 @@
   },
   {
     "id": "py_韩国色情电影",
-    "name": "py_韩国色情电影(T4)",
+    "name": "py_韩国色情电影-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=韩国色情电影",
     "nsfw": true,
     "type": 1,
@@ -468,7 +458,7 @@
   },
   {
     "id": "py_韩国BJ",
-    "name": "py_韩国BJ(T4)",
+    "name": "py_韩国BJ-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=韩国BJ",
     "nsfw": false,
     "type": 1,
@@ -488,7 +478,7 @@
   },
   {
     "id": "py_优酷视频",
-    "name": "py_优酷视频(T4)",
+    "name": "py_优酷视频-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=优酷视频",
     "nsfw": false,
     "type": 1,
@@ -498,7 +488,7 @@
   },
   {
     "id": "py_八戒影视",
-    "name": "py_八戒影视(T4)",
+    "name": "py_八戒影视-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=八戒影视",
     "nsfw": false,
     "type": 1,
@@ -518,7 +508,7 @@
   },
   {
     "id": "py_厂长资源",
-    "name": "py_厂长资源(T4)",
+    "name": "py_厂长资源-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=厂长资源",
     "nsfw": false,
     "type": 1,
@@ -528,7 +518,7 @@
   },
   {
     "id": "py_两个BT",
-    "name": "py_两个BT(T4)",
+    "name": "py_两个BT-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=两个BT",
     "nsfw": false,
     "type": 1,
@@ -548,7 +538,7 @@
   },
   {
     "id": "py_国外剧",
-    "name": "py_国外剧(T4)",
+    "name": "py_国外剧-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=国外剧",
     "nsfw": false,
     "type": 1,
@@ -558,7 +548,7 @@
   },
   {
     "id": "py_哇哇",
-    "name": "py_哇哇(T4)",
+    "name": "py_哇哇-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=哇哇",
     "nsfw": false,
     "type": 1,
@@ -568,7 +558,7 @@
   },
   {
     "id": "py_天天动漫",
-    "name": "py_天天动漫(T4)",
+    "name": "py_天天动漫-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=天天动漫",
     "nsfw": false,
     "type": 1,
@@ -578,7 +568,7 @@
   },
   {
     "id": "py_奇优动漫",
-    "name": "py_奇优动漫(T4)",
+    "name": "py_奇优动漫-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=奇优动漫",
     "nsfw": false,
     "type": 1,
@@ -608,7 +598,7 @@
   },
   {
     "id": "py_影视工厂",
-    "name": "py_影视工厂(T4)",
+    "name": "py_影视工厂-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=影视工厂",
     "nsfw":false,
     "type": 1,
@@ -618,7 +608,7 @@
   },
   {
     "id": "py_星芽短剧",
-    "name": "py_星芽短剧(T4)",
+    "name": "py_星芽短剧-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=星芽短剧",
     "nsfw": false,
     "type": 1,
@@ -638,7 +628,7 @@
   },
   {
     "id": "py_欣欣影视",
-    "name": "py_欣欣影视(T4)",
+    "name": "py_欣欣影视-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=欣欣影视",
     "nsfw": false,
     "type": 1,
@@ -678,7 +668,7 @@
   },
   {
     "id": "py_界影视",
-    "name": "py_界影视(T4)",
+    "name": "py_界影视-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=界影视",
     "nsfw": false,
     "type": 1,
@@ -688,8 +678,18 @@
   },
   {
     "id": "py_芒果TV",
-    "name": "py_芒果TV(T4)",
+    "name": "py_芒果TV-待修复(T4)",
     "api": "http://zhangqun1818.serv00.net:5052/?sp=芒果TV",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_cctv",
+    "name": "py_cctv-待修复(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=cctv",
     "nsfw": false,
     "type": 1,
     "extra": {
@@ -747,6 +747,7 @@
     }
   }
 ]
+
 
 
 
