@@ -176,6 +176,177 @@
     }
   },
   {
+    "id": "py_139fm多分类",
+    "name": "py_139fm多分类(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=139fm多分类",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_18",
+    "name": "py_18(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=18",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_91网爆黑料",
+    "name": "py_91网爆黑料(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=91网爆黑料",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_cctv",
+    "name": "py_cctv(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=cctv",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_epo",
+    "name": "py_epo(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=epo",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_stripchat",
+    "name": "py_stripchat(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=stripchat",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_uaa有声",
+    "name": "py_uaa有声(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=uaa有声",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_一个区",
+    "name": "py_一个区(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=一个区",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_七区",
+    "name": "py_七区(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=七区",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_九个区",
+    "name": "py_九个区(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=九个区",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_四虎视频",
+    "name": "py_四虎视频(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=四虎视频",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_推特",
+    "name": "py_推特(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=推特",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_色播聚合",
+    "name": "py_色播聚合(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=色播聚合",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_花都影院",
+    "name": "py_花都影院(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=花都影院",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+
+  {
+    "id": "py_葡萄5区",
+    "name": "py_葡萄5区(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=葡萄5区",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_韩国色情电影",
+    "name": "py_韩国色情电影(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=韩国色情电影",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_香蕉视频",
+    "name": "py_香蕉视频(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=香蕉视频",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
     "id": "Vod_X细胞资源",
     "name": "X细胞资源(采集)",
     "api": "https://xxibaozyw.com/api.php/provide/vod",
@@ -266,6 +437,266 @@
     }
   },
   {
+    "id": "py_饭团影视",
+    "name": "py_饭团影视(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=饭团影视",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_金牌",
+    "name": "py_金牌(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=金牌",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_非凡资源.min",
+    "name": "py_非凡资源.min(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=非凡资源.min",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_韩国BJ",
+    "name": "py_韩国BJ(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=韩国BJ",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_云云",
+    "name": "py_云云(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=云云",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_优酷视频",
+    "name": "py_优酷视频(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=优酷视频",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_八戒影视",
+    "name": "py_八戒影视(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=八戒影视",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_努努影院",
+    "name": "py_努努影院(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=努努影院",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_厂长资源",
+    "name": "py_厂长资源(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=厂长资源",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_两个BT",
+    "name": "py_两个BT(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=两个BT",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_UVod",
+    "name": "py_UVod(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=UVod",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_国外剧",
+    "name": "py_国外剧(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=国外剧",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_哇哇",
+    "name": "py_哇哇(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=哇哇",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_天天动漫",
+    "name": "py_天天动漫(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=天天动漫",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_奇优动漫",
+    "name": "py_奇优动漫(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=奇优动漫",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_小苹果影视",
+    "name": "py_小苹果影视(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=小苹果影视",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_小鸭子看看",
+    "name": "py_小鸭子看看(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=小鸭子看看",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_影视工厂",
+    "name": "py_影视工厂(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=影视工厂",
+    "nsfw":false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_星芽短剧",
+    "name": "py_星芽短剧(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=星芽短剧",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_甜圈短剧",
+    "name": "py_甜圈短剧(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=甜圈短剧",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_欣欣影视",
+    "name": "py_欣欣影视(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=欣欣影视",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_永乐视频",
+    "name": "py_永乐视频(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=永乐视频",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_泥视频",
+    "name": "py_泥视频(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=泥视频",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_爱瓜影视",
+    "name": "py_爱瓜影视(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=爱瓜影视",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_界影视",
+    "name": "py_界影视(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=界影视",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_芒果TV",
+    "name": "py_芒果TV(T4)",
+    "api": "http://zhangqun1818.serv00.net:5052/?sp=芒果TV",
+    "nsfw": false,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
     "id": "drpyS_番茄短剧",
     "name": "番茄短剧(DS)",
     "api": "https://ds.wmtv.qzz.io/api/番茄短剧?pwd=dzyyds",
@@ -316,6 +747,7 @@
     }
   }
 ]
+
 
 
 
