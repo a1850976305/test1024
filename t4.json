@@ -136,26 +136,6 @@
     }
   },
   {
-    "id": "py_51xiG",
-    "name": "51xiG(T4)",
-    "api": "https://learnpython.ggff.net/51xiG",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_911BaoLiao",
-    "name": "911BaoLiao(T4)",
-    "api": "https://learnpython.ggff.net/911BaoLiao",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
     "id": "py_JRKliao",
     "name": "JRKliao(T4)",
     "api": "https://learnpython.ggff.net/JRKliao",
@@ -199,16 +179,6 @@
     "id": "py_BadNews",
     "name": "BadNews(T4)",
     "api": "https://py.doube.eu.org/spider?site=BadNews",
-    "nsfw": true,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_91网爆黑料",
-    "name": "py_91网爆黑料-待修复(T4)",
-    "api": "http://zhangqun1818.serv00.net:5052/?sp=91网爆黑料",
     "nsfw": true,
     "type": 1,
     "extra": {
@@ -546,39 +516,9 @@
     }
   },
   {
-    "id": "py_2BT",
-    "name": "2BT(T4)",
-    "api": "https://learnpython.ggff.net/2BT",
-    "nsfw": false,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_TQ",
-    "name": "TQ(T4)",
-    "api": "https://learnpython.ggff.net/TQ",
-    "nsfw": false,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
     "id": "py_tudou",
     "name": "tudou(T4)",
     "api": "https://learnpython.ggff.net/py_tudou",
-    "nsfw": false,
-    "type": 1,
-    "extra": {
-    "template": "t4"
-    }
-  },
-  {
-    "id": "py_youku",
-    "name": "youku(T4)",
-    "api": "https://learnpython.ggff.net/youku",
     "nsfw": false,
     "type": 1,
     "extra": {
@@ -596,6 +536,7 @@
     }
   }
 ]
+
 
 
 
