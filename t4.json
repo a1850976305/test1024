@@ -519,7 +519,37 @@
     "id": "py_tudou",
     "name": "tudou(T4)",
     "api": "https://learnpython.ggff.net/py_tudou",
-    "nsfw": false,
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_MOTVPY",
+    "name": "MOTVPY(T4)",
+    "api": "https://learnpython.ggff.net/MOTVPY",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_WYAV",
+    "name": "WYAV(T4)",
+    "api": "https://learnpython.ggff.net/WYAV",
+    "nsfw": true,
+    "type": 1,
+    "extra": {
+    "template": "t4"
+    }
+  },
+  {
+    "id": "py_hstv",
+    "name": "hstv(T4)",
+    "api": "https://learnpython.ggff.net/hstv",
+    "nsfw": true,
     "type": 1,
     "extra": {
     "template": "t4"
@@ -536,6 +566,7 @@
     }
   }
 ]
+
 
 
 
