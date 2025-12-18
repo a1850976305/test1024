@@ -519,7 +519,7 @@
     "id": "py_tudou",
     "name": "tudou(T4)",
     "api": "https://learnpython.ggff.net/py_tudou",
-    "nsfw": true,
+    "nsfw": false,
     "type": 1,
     "extra": {
     "template": "t4"
@@ -566,6 +566,7 @@
     }
   }
 ]
+
 
 
 
