@@ -55,6 +55,102 @@
     }
   }
 },
+{
+        "id": "javxxcom",
+        "name": "JAVXX",
+        "api": "https://javxx.com",
+        "type": 1,
+        "nsfw": true,
+        "extra": {
+            "js": {
+                "category": [
+                    {
+                        "text": "最新",
+                        "id": "/tw/new"
+                    },
+                    {
+                        "text": "熱門",
+                        "id": "/tw/hot"
+                    },
+                    {
+                        "text": "最近",
+                        "id": "/tw/recent"
+                    },
+                    {
+                        "text": "今日",
+                        "id": "/tw/all?sort=today_views"
+                    },
+                    {
+                        "text": "每週",
+                        "id": "/tw/all?sort=weekly_views"
+                    },
+                    {
+                        "text": "每月",
+                        "id": "/tw/all?sort=monthly_views"
+                    },
+                    {
+                        "text": "有碼",
+                        "id": "/tw/censored"
+                    },
+                    {
+                        "text": "無碼",
+                        "id": "/tw/uncensored"
+                    },
+                    {
+                        "text": "洩露",
+                        "id": "/tw/uncensored-leaked"
+                    },
+                    {
+                        "text": "VR",
+                        "id": "/tw/vr"
+                    },
+                    {
+                        "text": "SIRO",
+                        "id": "/tw/tags/siro"
+                    },
+                    {
+                        "text": "LUXU",
+                        "id": "/tw/tags/259luxu"
+                    },
+                    {
+                        "text": "200GANA",
+                        "id": "/tw/tags/200gana"
+                    },
+                    {
+                        "text": "PRESTIGE",
+                        "id": "/tw/tags/prestige-premium"
+                    },
+                    {
+                        "text": "ORECO",
+                        "id": "/tw/tags/230oreco"
+                    },
+                    {
+                        "text": "S-CUTE",
+                        "id": "/tw/makers/s-cute"
+                    },
+                    {
+                        "text": "FC2",
+                        "id": "/tw/makers/fc2"
+                    },
+                    {
+                        "text": "HEYZO",
+                        "id": "/tw/makers/heyzo"
+                    },
+                    {
+                        "text": "1pondo",
+                        "id": "/tw/makers/1pondo"
+                    },
+                    {
+                        "text": "Caribbeancom",
+                        "id": "/tw/makers/caribbeancom"
+                    }
+                ],
+                "home": "const cate = env.get(\"category\") || '/tw/new';\nconst page = Number(env.get(\"page\")||1);\nlet url = cate;\nif(page>1){ url = `${cate}?page=${page}`; }\nconst fullUrl = `${env.baseUrl}${url}`;\nconst resp = await req(fullUrl,{headers:{'User-Agent':'Mozilla/5.0','Referer':env.baseUrl},timeout:30000});\nconst html = resp.content || resp;\nconst $ = kitty.load(html);\nlet items = [];\n$('div.item').each((i,el)=>{\n const link = $(el).find('a.poster').attr('href');\n if(!link) return;\n const id = link.replace(env.baseUrl,'');\n const title = $(el).find('a.title').text().trim();\n const cover = $(el).find('img').attr('src') || '';\n const remark = $(el).find('.duration').text().trim();\n if(id && title){ items.push({id,title,cover,remark}); }\n});\nreturn items.slice(0,12);",
+                "search": "const wd = String(env.get(\"keyword\")||'');\nconst page = Number(env.get(\"page\")||1);\nconst url = `${env.baseUrl}/tw/search?keyword=${encodeURIComponent(wd)}&page=${page}`;\nconst resp = await req(url,{headers:{'User-Agent':'Mozilla/5.0','Referer':env.baseUrl},timeout:30000});\nconst html = resp.content || resp;\nconst $ = kitty.load(html);\nlet items = [];\n$('div.item').each((i,el)=>{\n const link = $(el).find('a.poster').attr('href');\n if(!link) return;\n const id = link.replace(env.baseUrl,'');\n const title = $(el).find('a.title').text().trim();\n const cover = $(el).find('img').attr('src') || '';\n const remark = $(el).find('.duration').text().trim();\n if(id && title){ items.push({id,title,cover,remark}); }\n});\nreturn items.slice(0,12);",
+                "detail": "const id = env.get(\"movieId\")||'';\nconst title = env.get(\"title\") || '';\nconst url = `${env.baseUrl}${id}`;\nconst resp = await req(url,{headers:{'User-Agent':'Mozilla/5.0','Referer':env.baseUrl},timeout:30000});\nconst html = resp.content || resp;\nconst $ = kitty.load(html);\nlet cover = $('img').attr('src') || '';\nlet descParts = [];\n$('d-tag.desc div.content').each((i,el)=>{ const t=$(el).text().trim(); if(t) descParts.push(t); });\n$('div.meta div').each((i,el)=>{ const t=$(el).text().trim(); if(t) descParts.push(t); });\nconst desc = descParts.join(\"\\\\n\");\n// 播放入口：直接用详情页链接作为播放页\nconst playlist = [{ title: '在线播放', videos: [ { text: '播放', id: url, type: 'web_direct' } ] }];\nreturn {id,title,cover,desc,playlist};"
+            }
+        }
+    },
   {
     "id": "Xvd",
     "name": "Xvd(T4)",
