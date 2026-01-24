@@ -152,6 +152,52 @@
         }
     },
   {
+  "id": "QQQYS",
+  "name": "3Q影视",
+  "api": "https://qqqys.com",
+  "type": 1,
+  "desc": "解析 qqqys.com 分类、详情与搜索，支持两种播放列表",
+  "nsfw": false,
+  "extra": {
+    "js": {
+      "category": [
+        { "text": "电影", "id": "电影" },
+        { "text": "剧集", "id": "剧集" },
+        { "text": "综艺", "id": "综艺" },
+        { "text": "动漫", "id": "动漫" }
+      ],
+      "home": "const cate=env.get('category')'电影';const page=Number(env.get('page')||1);const limit=24;const BASE=env.baseUrl.replace(/\\/+$/,'');const url=`${BASE}/api.php/filter/vod?type_name=${encodeURIComponent(cate)}&sort=hits&page=${page}&limit=${limit}`;const res=await req(url,{headers:{'User-Agent':'Mozilla/5.0'}});const data=typeof res==='string'?JSON.parse(res):(res&&res.content?JSON.parse(res.content):{});const items=[];(data.data[]).forEach(v=>{const remark=[v.vod_year,v.vod_area,v.vod_class].filter(Boolean).join(' / ');items.push({id:${BASE}/vd/${v.vod_id}.html,title:v.vod_name,cover:v.vod_pic,remark});});return items;",
+      "detail": "const url=env.get('movieId');const res=await req(url,{headers:{'User-Agent':'Mozilla/5.0'}});const html=typeof res==='string'?res:(res&&res.content?res.content:'');const $=kitty.load(html);const title=$('h1').text().trim()'';const cover=$('.lazyload').attr('src')'';const desc=$('.line-clamp-5 p').text().trim()'';const idMatch=url.match(/vd\\/(\\d+)\\.html/);const vodId=idMatch?idMatch[1]:'';let playlist=[];if(vodId){/* 第一种方式：API JSON */const api=`${env.baseUrl}/api.php/internal/search_aggregate?vod_id=${vodId}`;const res2=await req(api,{headers:{'User-Agent':'Mozilla/5.0'}});const data2=typeof res2==='string'?JSON.parse(res2):(res2&&res2.content?JSON.parse(res2.content):{});(data2.data[]).forEach(site=>{const videos=[];(site.vod_play_url||'').split('#').forEach(seg=>{const parts=seg.split('$');if(parts.length===2){videos.push({text:parts[0],id:parts[1],type:'m3u8'});}});if(videos.length)playlist.push({title:site.site_name,videos});});/* 第二种方式：PLAYLIST_DATA */const playMatch=html.match(/window.PLAYLIST_DATA\\s*=\\s*(\\{.*?\\})/s);if(playMatch){try{const playData=JSON.parse(playMatch[1]);Object.values(playData).forEach(group=>{const from=group.from;const show=group.player_info.show||from;const videos=[];Object.values(group.urls||{}).forEach(u=>{const nid=u.nid;const name=u.name||('第'+nid+'集');const playUrl=${url}+#sid=${from}&nid=${nid};videos.push({text:name,id:playUrl,type:'m3u8'});});if(videos.length)playlist.push({title:show,videos});});}catch(e){}}}return{id:url,title,cover,desc,playlist};",
+      "search":"const keyword=env.get('keyword')'';const page=Number(env.get('page')||1);const BASE=env.baseUrl.replace(/\\/+$/,'');if(!keyword)return[];const url=`${BASE}/vodsearch/${encodeURIComponent(keyword)}--/page/${page}.html`;const res=await req(url,{headers:{'User-Agent':'Mozilla/5.0'}});const html=typeof res==='string'?res:(res&&res.content?res.content:'');const $=kitty.load(html);const items=[];$('.ml-[105px]').each((i,el)=>{const title=$(el).find('strong').text().trim();const remark=$(el).find('.flex .truncate').first().text().trim();const actor=$(el).find('.flex .truncate').eq(1).text().trim();const cover=$(el).find('img.lazy').attr('data-original')'';const id=$(el).find('a[href*=\"/vd/\"]').attr('href');if(title&&id){items.push({id:${BASE}${id},title,cover,remark,actor});}});return items;"
+    }
+  }
+  },
+  {
+  "id": "hkftv1210",
+  "name": "HKFTV",
+  "api": "https://www.hkftv1210.sbs",
+  "type": 1,
+  "nsfw": true,
+  "extra": {
+    "js": {
+      "category": [
+        { "text": "首页TV", "id": "/" },
+        { "text": "精品推荐", "id": "/index.php/vod/type/id/1.html" },
+        { "text": "国产精品", "id": "/index.php/vod/type/id/2.html" },
+        { "text": "日本有码", "id": "/index.php/vod/type/id/3.html" },
+        { "text": "日本无码", "id": "/index.php/vod/type/id/4.html" },
+        { "text": "中文字幕", "id": "/index.php/vod/type/id/5.html" },
+        { "text": "麻豆传媒", "id": "/index.php/vod/type/id/6.html" },
+        { "text": "性感人妻", "id": "/index.php/vod/type/id/7.html" },
+        { "text": "强奸乱伦", "id": "/index.php/vod/type/id/8.html" }
+      ],
+      "home": "const cate = env.get(\"category\")  '/index.php/vod/type/id/1.html';\nconst page = Number(env.get(\"page\")  1);\nlet url;\nif(page === 1){ url = ${env.baseUrl}${cate}; } else { url = ${env.baseUrl}${cate.replace('.html','')}/page/${page}.html; }\nconst headers = { 'User-Agent': 'Mozilla/5.0', 'Referer': env.baseUrl };\nconst resp = await req(url, { headers, timeout: 20000 });\nconst html = typeof resp === 'string' ? resp : (resp && resp.content ? resp.content : '');\nif(!html) return [];\nconst $ = kitty.load(html);\nconst items = [];\n$('div.video-img-box').each((i, el) => {\n  const link = $(el).find('a').attr('href')  '';\n  const id = link;\n  const title = $(el).find('a').attr('title')  $(el).find('h6 a').text()  '';\n  const cover = $(el).find('img').attr('data-src')  $(el).find('img').attr('src')  '';\n  const remark = $(el).find('span.label').text()  '';\n  if(id && title){ items.push({ id, title, cover, remark }); }\n});\nreturn items;",
+      "search": "const wd = String(env.get(\"keyword\")  '');\nconst page = Number(env.get(\"page\")  1);\nlet url;\nif(page === 1){ url = ${env.baseUrl}/index.php/vod/search/wd/${encodeURIComponent(wd)}.html; } else { url = ${env.baseUrl}/index.php/vod/search/page/${page}/wd/${encodeURIComponent(wd)}.html; }\nconst headers = { 'User-Agent': 'Mozilla/5.0', 'Referer': env.baseUrl };\nconst resp = await req(url, { headers, timeout: 20000 });\nconst html = typeof resp === 'string' ? resp : (resp && resp.content ? resp.content : '');\nif(!html) return [];\nconst $ = kitty.load(html);\nconst items = [];\n$('div.video-img-box').each((i, el) => {\n  const link = $(el).find('a').attr('href')  '';\n  const id = link;\n  const title = $(el).find('a').attr('title')  $(el).find('h6 a').text()  '';\n  const cover = $(el).find('img').attr('data-src')  $(el).find('img').attr('src')  '';\n  const remark = $(el).find('span.label').text()  '';\n  if(id && title){ items.push({ id, title, cover, remark }); }\n});\nreturn items;",
+      "detail": "const id = env.get(\"movieId\")  '';\nconst cover = env.get(\"cover\")  '';\nconst url = ${env.baseUrl}${id};\nconst headers = { 'User-Agent': 'Mozilla/5.0', 'Referer': env.baseUrl };\nconst resp = await req(url, { headers, timeout: 20000 });\nconst html = typeof resp === 'string' ? resp : (resp && resp.content ? resp.content : '');\nif(!html) return {};\nconst $ = kitty.load(html);\nconst title = $('h1').text().trim()  $('title').text().trim()  '';\nconst desc = $('meta[name=\"description\"]').attr('content') || '';\nlet playUrl = '';\n$('script[type=\"text/javascript\"]').each((i,el)=>{\n  const txt = $(el).html();\n  if(txt && txt.includes('player_aaaa')){\n    const match = txt.match(/\\\"url\\\":\\\"([^\\\"]+)\\\"/);\n    if(match){ playUrl = match[1].replace(/\\\\\\//g,'/'); }\n  }\n});\nconst playlist = playUrl ? [{ title: '在线播放', videos: [ { text: '播放', id: playUrl, type: 'direct' } ] }] : [];\nreturn { id, title, cover, desc, playlist };"
+    }
+    }
+    },
+  {
     "id": "Xvd",
     "name": "Xvd(T4)",
     "api": "https://learnpython.ggff.net/Xvd",
