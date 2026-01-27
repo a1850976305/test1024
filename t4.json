@@ -173,6 +173,40 @@
   }
   },
   {
+        "id": "roum26",
+        "name": "🎨肉肉漫画",
+        "api": "https://roum26.xyz",
+        "type": 1,
+        "desc": "Roum26 小说分类、搜索、详情、播放列表",
+        "nsfw": true,
+        "extra": {
+            "js": {
+                "category": [
+                    {
+                        "text": "首页",
+                        "id": "home"
+                    },
+                    {
+                        "text": "全部",
+                        "id": "undefined"
+                    },
+                    {
+                        "text": "连载",
+                        "id": "true"
+                    },
+                    {
+                        "text": "完结",
+                        "id": "false"
+                    }
+                ],
+                "home": "const cate = env.get(\"category\")  'undefined';\nconst page = Number(env.get(\"page\")||0);\n\nif(cate === 'home'){\n const fullUrl = `${env.baseUrl}/home`;\n const resp = await req(fullUrl,{headers:{'User-Agent':'Mozilla/5.0'},timeout:60000});\n const html = resp.content  resp;\n if(!html) return [];\n const $ = kitty.load(html);\n const modules = [];\n const allItems = [];\n const seen = new Set();\n\n $('a[href^=\"/books/\"]').each((i,el)=>{\n const id = $(el).attr('href');\n if(seen.has(id)) return; // 去重\n seen.add(id);\n const title = $(el).find('div.truncate').text().trim();\n let coverStyle = $(el).find('div[style]').attr('style')  '';\n let coverMatch = coverStyle.match(/https:\\/\\/r5\\.rmcdn10\\.xyz\\/(.+?\\.jpg)/);\n const cover = coverMatch ? `https://r5.rmcdn10.xyz/${coverMatch[1]}` : '';\n const desc = $(el).find('div.text-muted-foreground').first().text().trim();\n const remark = $(el).find('div.text-muted-foreground.text-sm').text().trim();\n if(id && title){ allItems.push({id,title,cover,desc,remark}); }\n });\n\n const titles = ['超高人氣','今日爆款','最近更新','本週熱門','完結精選'];\n for(let g=0; g<5; g++){\n const group = allItems.slice(g*12,(g+1)*12);\n if(group.length){\n const bannerItems = group.slice(0,8);\n const listItems = group.slice(8,12);\n if(bannerItems.length) modules.push({type:'banner',title:titles[g],videos:bannerItems});\n if(listItems.length) modules.push({type:'list',title:titles[g],videos:listItems});\n }\n }\n\n return {type:'complex',data:modules};\n} else {\n let url = `/books?continued=${cate}&page=${page}`;\n const fullUrl = `${env.baseUrl}${url}`;\n const resp = await req(fullUrl,{headers:{'User-Agent':'Mozilla/5.0'},timeout:60000});\n const html = resp.content  resp;\n const $ = kitty.load(html);\n let items = [];\n const seen = new Set();\n $('a[href^=\"/books/\"]').each((i,el)=>{\n const id = $(el).attr('href');\n if(seen.has(id)) return;\n seen.add(id);\n const title = $(el).find('div.truncate').text().trim();\n let coverStyle = $(el).find('div[style]').attr('style')  '';\n let coverMatch = coverStyle.match(/https:\\/\\/r5\\.rmcdn10\\.xyz\\/(.+?\\.jpg)/);\n const cover = coverMatch ? `https://r5.rmcdn10.xyz/${coverMatch[1]}` : '';\n const desc = $(el).find('div.text-muted-foreground').first().text().trim();\n const remark = $(el).find('div.text-muted-foreground.text-sm').text().trim();\n if(id && title){ items.push({id,title,cover,desc,remark}); }\n });\n return items;\n}",
+                "search": "const wd = String(env.get(\"keyword\")'');\nconst page = Number(env.get(\"page\")0);\nconst url = `/search?term=${encodeURIComponent(wd)}&page=${page}`;\nconst fullUrl = `${env.baseUrl}${url}`;\nconst resp = await req(fullUrl,{headers:{'User-Agent':'Mozilla/5.0'},timeout:60000});\nconst html = resp.content  resp;\nconst $ = kitty.load(html);\nlet items = [];\n$('a[href^=\"/books/\"]').each((i,el)=>{\n const id = $(el).attr('href');\n const title = $(el).find('div.truncate').text().trim();\n // 封面解析：提取 https://r5.rmcdn10.xyz/ 和 .jpg 之间的部分\n let coverStyle = $(el).find('div[style]').attr('style')
+                '';\n let coverMatch = coverStyle.match(/https:\\/\\/r5\\.rmcdn10\\.xyz\\/(.+?\\.jpg)/);\n const cover = coverMatch ? `https://r5.rmcdn10.xyz/${coverMatch[1]}` : '';\n const desc = $(el).find('div.text-muted-foreground').first().text().trim();\n const remark = $(el).find('div.text-xs.text-muted-foreground').last().text().trim();\n if(id && title){ items.push({id,title,cover,desc,remark}); }\n});\nreturn items;",
+                "detail": "const id = env.get(\"movieId\")'';\nconst url = ${env.baseUrl}${id};\nconst resp = await req(url,{headers:{'User-Agent':'Mozilla/5.0'},timeout:60000});\nconst html = resp.content  resp;\nconst $ = kitty.load(html);\n\n// 封面解析：和首页一致\nlet coverStyle = $('div[style]').attr('style')  '';\nlet coverMatch = coverStyle.match(/https:\\/\\/r5\\.rmcdn10\\.xyz\\/(.+?\\.jpg)/);\nconst cover = coverMatch ? https://r5.rmcdn10.xyz/${coverMatch[1]} : '';\n\nlet desc = $('.my-2.text-foreground p').text().trim();\n\nlet videos = [];\n$('div.grid a').each((i,a)=>{\n const href = $(a).attr('href');\n const title = $(a).text().trim();\n if(href && title){\n const playUrl = ${env.baseUrl}${href};\n videos.push({ text: title, url: playUrl, type: 'iframe' });\n }\n});\n\nreturn {\n id,\n title: $('title').text().trim(),\n cover,\n desc,\n playlist: [{ title: '播放列表', videos }]\n};"
+            }
+        }
+    },
+  {
   "id": "hkftv1210",
   "name": "HKFTV",
   "api": "https://www.hkftv1210.sbs",
