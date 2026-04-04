@@ -2,9 +2,9 @@
   "spider": "",
   "sites": [
     {
-      "api": "https://newtv.ggff.net/jubaba?token=fhJadO1R",
-      "key": "裤佬剧吧影视",
-      "name": "👖裤佬丨剧吧丨影视(T4)",
+      "api": "http://zhangqun1818.serv00.net:5052/?sp=永乐视频",
+      "key": "老张永乐视频",
+      "name": "老张丨永乐丨影视(T4)",
       "type": 4
     },
     {
