@@ -2,82 +2,46 @@
   "spider": "",
   "sites": [
     {
-      "key": "T4-secan-agg",
-      "name": "T4聚合-secan(推荐)",
-      "type": 4,
-      "api": "https://t4.secan.icu/vod?sites=all"
+      "api": "https://newtv.ggff.net/jubaba?token=fhJadO1R",
+      "key": "裤佬剧吧影视",
+      "name": "👖裤佬丨剧吧丨影视(T4)",
+      "type": 4
     },
     {
-      "key": "T4-secan-search",
-      "name": "T4搜片-secan",
+      "key": "裤佬爱瓜影视",
+      "name": "👖裤佬丨爱瓜丨影视(T4)",
       "type": 4,
-      "api": "https://t4.secan.icu/vod?sites=all&timeout=8"
+      "api": "http://zhangqun1818.serv00.net/aigua1.php"
     },
     {
-      "key": "T4-secan-heji",
-      "name": "T4合集-secan",
-      "type": 4,
-      "api": "https://t4.secan.icu/vod?sites=all&ali_token=4acb3ad2f2254ba1b566279f7cd98ba3&timeout=10"
+      "api": "https://newtv.ggff.net/uvod?token=P69Phb_y",
+      "key": "裤佬U视影视",
+      "name": "👖裤佬丨U视丨影视(T4)",
+      "type": 4
     },
     {
-      "key": "T4-ganggang",
-      "name": "T4-豆瓣荐片-ganggang",
-      "type": 4,
-      "api": "http://t4.ganggang.live:3812/vod"
+      "api": "https://newtv.ggff.net/oule?token=P69Phb_y",
+      "key": "裤佬欧乐影视",
+      "name": "👖裤佬丨欧乐丨影视(T4)",
+      "type": 4
     },
     {
-      "key": "T4-fantaiying",
-      "name": "T4-饭太硬",
-      "type": 4,
-      "api": "https://t4.饭太硬.ml/vod"
+      "api": "https://newtv.ggff.net/ikanbot?token=P69Phb_y",
+      "key": "裤佬爱看影视",
+      "name": "👖裤佬丨爱看丨影视(T4)",
+      "type": 4
     },
     {
-      "key": "T4-tencent",
-      "name": "T4聚合-tencent云函数",
+      "key": "裤佬嗅探影视",
+      "name": "👖裤佬丨嗅探丨影视(T4)",
       "type": 4,
-      "api": "https://service-la7b1xlw-1308372858.gz.apigw.tencentcs.com/release/vod?sites=all"
+      "api": "https://py.doube.eu.org/v2/spider?site=006849a2c19a6be413be5017be468c63"
     },
     {
-      "key": "T4-tencent2",
-      "name": "T4聚搜-tencent备用",
+      "key": "裤佬旺旺短剧",
+      "name": "👖裤佬丨旺旺丨短剧(T4)",
       "type": 4,
-      "api": "https://service-59u7dsoa-1308372858.gz.apigw.tencentcs.com/release/vod"
-    },
-    {
-      "key": "T4-tang-anbo",
-      "name": "唐三-安博(T4)",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/ub18?token=48da13fc"
-    },
-    {
-      "key": "T4-tang-heimuer",
-      "name": "唐三-黑木影视(T4)",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/hme?token=48da13fc"
-    },
-    {
-      "key": "T4-tang-duboku",
-      "name": "唐三-独播库(T4)",
-      "type": 4,
-      "api": "https://tang.hz.cz/power/duboku?token=48da13fc"
-    },
-    {
-      "key": "T4-MV大全",
-      "name": "MV大全(T4)",
-      "type": 4,
-      "api": "http://120.53.102.254/dsp/"
-    },
-    {
-      "key": "T4-抖音小姐姐",
-      "name": "抖音小姐姐(T4)",
-      "type": 4,
-      "api": "http://120.53.102.254/xjj"
-    },
-    {
-      "key": "T4-直播转点播",
-      "name": "T4直播转点播",
-      "type": 4,
-      "api": "http://120.53.102.254/live?url=aHR0cDovLzl4aTRvLnRrL3N1Yi9teXR2LnR4dA=="
+      "api": "http://zhangqun1818.serv00.net/ww.php"
     }
   ],
   "lives": [
